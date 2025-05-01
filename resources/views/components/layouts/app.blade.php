@@ -18,8 +18,10 @@
                     <label for="profile-drawer" class="btn btn-ghost btn-circle lg:hidden">
                         <img src="{{ asset('logos/peminjaman.png') }}" alt="sidebar" class="lg:hidden w-7 mr-5">
                     </label>
-                    <img src="logos/unj.png" alt="Logo UNJ" class="w-7 sm:w-10 lg:w-14">
-                    {{-- <h1 class="ml-4 font-semibold text-xl not-lg:hidden">UNIVERSITAS NEGERI JAKARTA</h1> --}}
+                    <a href="{{ route('homepage') }}" class="flex items-center">
+                        <img src="logos/unj.png" alt="Logo UNJ" class="w-7 sm:w-10 lg:w-14">
+                        <h1 class="ml-4 font-semibold text-xl not-lg:hidden">UNIVERSITAS NEGERI JAKARTA</h1>
+                    </a>
                 </div>
                 <div class="navbar-end">
                     <div class="not-lg:hidden">
@@ -28,15 +30,6 @@
                         </button>
                         <button class="btn btn-ghost">
                             Manage User
-                        </button>
-                        <button class="btn btn-ghost">
-                            Fasilitas
-                        </button>
-                        <button class="btn btn-ghost">
-                            Layanan
-                        </button>
-                        <button class="btn btn-ghost">
-                            Feedback
                         </button>
                     </div>
                     <div class="dropdown">
