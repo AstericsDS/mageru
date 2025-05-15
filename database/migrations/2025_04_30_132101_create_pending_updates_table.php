@@ -12,6 +12,7 @@ return new class extends Migration {
     {
         Schema::create('pending_updates', function (Blueprint $table) {
             $table->ulid('id')->primary();
+            $table->foreignUlid('admin_id')->constrained('users');
             $table->string('table_name');
             $table->string('record_id');
             $table->json('old_data');
